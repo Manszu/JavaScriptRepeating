@@ -1,8 +1,7 @@
-var age = Number(prompt("What is your age?", " "));
+var string1= "lala";
+var string2= "lala2 'dsa'";
+var string3= "lala \"lazy\" lala \n";
+var string4= string1 +string2;
 
-var string = "";
-do {
-  string += "Happy birthday \n";
-  age = age - 1;
-} while (age > 0)
-alert(string);
+var myArray= string4.split(" ");
+alert(myArray); //output lalalala2 ,'dsa'

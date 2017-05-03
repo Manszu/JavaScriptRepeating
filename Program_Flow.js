@@ -42,6 +42,41 @@ var age = Number(prompt("What is your age?", " "));
 var string = "";
 do {
   string += "Happy birthday \n";
-  age = age-1;
+  age = age - 1;
 }
 alert(string);
+
+//for loop
+var age = Number(prompt("What is your age?", " "));
+var string = "";
+for (var theAge = age; theAge > 0; theAge -= 1) {
+  string += "Happy Birthda\n";
+}
+
+alert(string);
+
+//break statement
+var age = Number(prompt("What is your age?", " "));
+var string = "";
+
+for (var counter = 1; counter < age; counter += 1) {
+  string += "Happy Birthday\n";
+  if (counter % 7 == 0)
+    break;
+}
+
+alert(string);
+
+//switch statement
+var animal = "dog";
+switch(animal)
+{
+  case "cat":
+    alert("meow");
+    break;
+  case "dog":
+    alert("woof");
+  default:
+    alert("unknown animal!");
+    break;
+}
